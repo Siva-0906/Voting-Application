@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 Voting System</h1>
+
+        <!-- Login Section -->
+        <div id="login">
+            <h2>Login to Vote</h2>
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <input type="password" id="password" placeholder="Enter your password" required />
+            <button class="btn" onclick="login()">Login</button>
+        </div>
+
+        <!-- Voting Section -->
+        <div id="voting" style="display: none;">
+            <h2>Vote for Your Favorite Participant</h2>
+            <div id="participants"></div>
+            <button class="btn logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Voting System | Designed with ❤</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
